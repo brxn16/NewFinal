@@ -5,7 +5,7 @@ html, body {
 body {
 	margin: 0px;
 	padding: 0px;
-	background: #16a085;
+	background: #990a00;
 	font-family: 'Raleway', sans-serif;
 	font-size: 11pt;
 	font-weight: 400;
@@ -124,6 +124,16 @@ hr {
 		padding-top: 0;
 	}
 
+	ul.style3 li
+	{
+		padding: 0.80em 0;
+	}
+
+	ul.style3 li:first-child
+	{
+		border-top: 0;
+		padding-top: 0;
+	}
 /*********************************************************************************/
 /* Social Icon Styles                                                            */
 /*********************************************************************************/
@@ -186,7 +196,7 @@ hr {
 	{
 		font-weight: 400;
 		font-size: 2em;
-		color: #16a085;
+		color: #990a00;
 	}
 
 	.title .byline
@@ -296,7 +306,7 @@ hr {
 
 #menu-wrapper
 {
-	background: #16a085;
+	background: #990a00;
 }
 
 #menu {
@@ -334,7 +344,7 @@ hr {
 }
 
 #menu .current_page_item a {
-	background: #1abc9c;
+	background: #b50b00;
 }
 
 /** PAGE */
@@ -498,7 +508,7 @@ hr {
 		display: inline-block;
 		margin-top: 1.5em;
 		padding: 1.50em 3em 1.50em 3em;
-		background: #16a085;
+		background: #990a00;
 		text-decoration: none;
 		text-transform: uppercase;
 		font-weight: 400;
