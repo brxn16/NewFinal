@@ -238,7 +238,7 @@ hr {
 	overflow: hidden;
 	background: url(images/bg01.png) repeat;
 	background-size: 100%;
-	padding: 3em 0em 2em 0em;
+	padding: 2em 0em 1.5em 0em;
 	background: #333333;
 }
 
@@ -292,7 +292,7 @@ hr {
 	#banner
 	{
 		overflow: hidden;
-		height: 500px;
+		height: 550px;
 		background: url(images/LiftBridge.jpg) no-repeat center;
 		background-size: cover;
 	}
