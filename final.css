@@ -446,6 +446,25 @@ hr {
 		color: #6F6F6F;
 	}
 
+	table{
+		border-style: solid;
+		border-spacing: 5px;
+		align: left;
+		width: 750px;
+		padding: 10px;
+		margin-bottom: 20px;
+	}
+	th{
+		border-bottom: solid;
+		border-color: inherit;
+		align: center;
+		color: #990a00;
+	}
+	td{
+		border-bottom: solid;
+		padding: 2px;
+	}
+
 /*********************************************************************************/
 /* Portfolio                                                                     */
 /*********************************************************************************/
