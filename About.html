@@ -99,23 +99,20 @@ Released   : 20140310
 	</div>
 <div id="copyright" class="container">
 	<p>Photos by <strong>Brendan Camplese</strong> | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
+	<!--JavaScript-->
 	<p id="time"></p>
 </div>
 <script>
-  /*
-  Create a JavaScript Date object for the current date and time,
-  then extract the desired parts, then join them again in the desired format.
-  */
   var currentTime = new Date(),
       hours = currentTime.getHours(),
       minutes = currentTime.getMinutes();
 
-  // Add a leading zero if needed
+  // Add a leading zero
   if (minutes < 10) {
     minutes  = "0" + minutes;
   }
 
-  // Add suffix and adjust hours for 12hr time if required
+  // Add suffix and adjust hours for 12hr time
 	var suffix = "AM";
 	if (hours >= 12) {
     suffix = "PM";
