@@ -67,7 +67,7 @@ Released   : 20140310
 		</div>
 	</div>
 	<div class="table">
-		<table align="center">
+		<table>
 		<tr>
 			<th>Computer Languages</th>
 			<th>Definition</th>
@@ -126,6 +126,34 @@ Released   : 20140310
 	</div>
 <div id="copyright" class="container">
 	<p>Photos by <strong>Brendan Camplese</strong> | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
+	<!--JavaScript-->
+	<p id="time"></p>
 </div>
+<script>
+  var currentTime = new Date(),
+      hours = currentTime.getHours(),
+      minutes = currentTime.getMinutes();
+
+  // Add a leading zero
+  if (minutes < 10) {
+    minutes  = "0" + minutes;
+  }
+
+  // Add suffix and adjust hours for 12hr time
+	var suffix = "AM";
+	if (hours >= 12) {
+    suffix = "PM";
+    hours = hours - 12;
+	}
+	if (hours == 0) {
+	 hours = 12;
+	}
+
+  // Join the parts
+  time = hours + ":" + minutes + " " + suffix;
+
+  // Output the result to the above HTML element
+  document.getElementById("time").innerHTML = time;
+</script>
 </body>
 </html>

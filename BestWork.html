@@ -53,12 +53,15 @@ Released   : 20140310
 				<span class="byline"></span> </div>
 			<p>Hello! My name is Brendan Camplese and I am a student at Davenport West High School, in Davenport, Iowa.</p>
 			<p>During my time spent in Web Design, the course my school offers, I have learned a lot about designing webpages, HTML language, and a small amount of JavaScript. Here is a list of some of the best work I've done!</p>
+			<br>
 			<ul class="style3">
 				<li><a href="https://brxn16.github.io/Module-3-html-1/Curbside-Thai-master/ct_about.html">Curbside Thai</a></li>
 				<li><a href="https://brxn16.github.io/Module-3-html-1/JeddsTreeCare-master/case1/jtc_index_txt.html">Jedd's Tree Care</a></li>
 				<li><a href="https://club-website.github.io/Museum-Website/">Davenport School Museum</a></li>
-				<li><a href="https://brxn16.github.io/Car-Page/cars.html">Car Page</a> (First Website I had ever made)</li>
+				<li><a href="https://brxn16.github.io/Car-Page/cars.html">Car Page</a></li>
 				<li><a href="https://brxn16.github.io/Recipes/Recipes.html">Recipes</a></li>
+				<li><a href="https://github.com/KandBProject/Final/blob/master/README.md">1980's Baseball Game</a></li>
+
 			</ul>
 		</div>
 		<div id="sidebar">
@@ -107,6 +110,34 @@ Released   : 20140310
 	</div>
 <div id="copyright" class="container">
 	<p>Photos by <strong>Brendan Camplese</strong> | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
+	<!--JavaScript-->
+	<p id="time"></p>
 </div>
+<script>
+  var currentTime = new Date(),
+      hours = currentTime.getHours(),
+      minutes = currentTime.getMinutes();
+
+  // Add a leading zero
+  if (minutes < 10) {
+    minutes  = "0" + minutes;
+  }
+
+  // Add suffix and adjust hours for 12hr time
+	var suffix = "AM";
+	if (hours >= 12) {
+    suffix = "PM";
+    hours = hours - 12;
+	}
+	if (hours == 0) {
+	 hours = 12;
+	}
+
+  // Join the parts
+  time = hours + ":" + minutes + " " + suffix;
+
+  // Output the result to the above HTML element
+  document.getElementById("time").innerHTML = time;
+</script>
 </body>
 </html>
